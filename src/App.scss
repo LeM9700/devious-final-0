@@ -1,0 +1,61 @@
+/* Dégradé de bleu en fond du site */
+body {
+  background: rgb(14,10,77);
+background: radial-gradient(circle, rgba(14,10,77,1) 2%, rgba(118,118,221,1) 49%, rgba(187,220,227,1) 100%);
+}
+
+/* Mode clair : Teinte plus légère */
+body.light-mode {
+  background: rgb(50,46,108);
+  background: radial-gradient(circle, rgba(50,46,108,1) 0%, rgba(18,14,80,1) 6%, rgba(14,10,77,1) 19%, rgba(136,131,181,1) 28%, rgba(49,45,107,1) 29%, rgba(118,118,221,1) 31%, rgba(86,82,139,1) 100%, rgba(77,73,131,1) 100%);}
+
+/* Mode automatique : Adaptation au paramètre du système */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: rgb(50,46,108);
+    background: radial-gradient(circle, rgba(50,46,108,1) 0%, rgba(18,14,80,1) 6%, rgba(86,82,139,1) 9%, rgba(77,73,131,1) 17%, rgba(14,10,77,1) 19%, rgba(136,131,181,1) 28%, rgba(118,118,221,1) 28%, rgba(49,45,107,1) 29%);
+  }
+}
+
+
+.App {
+  text-align: center;
+  position: relative; /* Assure-toi que le conteneur est positionné pour que le bouton puisse être positionné par rapport à lui */
+  min-height: 100vh; /* Assure-toi que le conteneur prend au moins 100% de la hauteur de la vue */
+}
+
+.Paper {
+  position: relative; /* Conserve la position relative pour les éléments enfants */
+}
+
+
+.toggle-button-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.toggle-button {
+  position: fixed;
+  bottom: 20px; /* Ajuste cette valeur pour définir la distance par rapport au bas de l'écran */
+  right: 20px; /* Ajuste cette valeur pour définir la distance par rapport au côté droit de l'écran */
+  background-color: #fff; /* Ajuste la couleur de fond selon tes préférences */
+  padding: 10px; /* Ajuste la marge intérieure selon tes préférences */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px; 
+  /* Ajoute d'autres styles au besoin */
+}
+
+.toggle-button:hover {
+  background-color: #eee; /* Ajuste la couleur de fond au survol selon tes préférences */
+}
+
+
+
+
+
+

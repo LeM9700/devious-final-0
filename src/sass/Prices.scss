@@ -1,0 +1,76 @@
+.tarif-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.tarif-card {
+  width: calc(30% - 10px); // Ajustez la largeur selon vos besoins
+  min-width: 365px; /* Largeur minimale */
+  min-height: 520px; /* Hauteur minimale */
+  margin: 10px;
+  padding: 20px;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Ajoute une légère ombre pour la profondeur
+  transition: transform 0.3s ease-in-out; // Ajoute une transition pour une animation fluide
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
+    transform: scale(1.05); // Effet d'agrandissement au survol
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50px; // Arrondir les coins
+    background-image: url('../img/HeaderTitle.png'); // Remplacez par le chemin de votre image de fond
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+  }}
+
+
+
+.tarif-card Typography.variant-h4 {
+  font-size: 1.6rem; /* Taille de police légèrement plus grande pour les titres */
+  margin-bottom: 10px; /* Espacement en bas pour éviter le chevauchement avec le texte suivant */
+}
+
+/* Style pour les descriptions */
+.tarif-card Typography.variant-h6 {
+  font-size: 1.2rem; /* Taille de police légèrement plus grande pour les descriptions */
+  margin-bottom: 15px; /* Espacement en bas pour une meilleure lisibilité */
+}
+
+/* Style pour les boutons */
+.tarif-card Button {
+  font-size: 12px; /* Taille de police légèrement plus petite pour les boutons */
+  margin-top: 15px; /* Espacement entre le texte et le bouton */
+  padding: 8px 16px; /* Ajustement des marges intérieures pour un aspect plus équilibré */
+  transition: background-color 0.3s ease-in-out;
+
+  &:hover {
+    background-color: #1565c0;
+    color: #fff;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .tarif-card {
+    width: calc(45% - 20px); // Ajustez la largeur pour deux par ligne sur des écrans plus petits
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .tarif-card {
+    width: 100%; // Affiche une par ligne sur des écrans très petits
+  }
+}

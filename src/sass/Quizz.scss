@@ -1,0 +1,76 @@
+// NomDeVotreFichier.scss
+
+// Importez les variables de couleur de Material-UI
+
+
+// Styles généraux
+
+
+// Styles pour chaque section FullPage
+#fullpage {
+  .section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+  }
+
+ // Style pour chaque section dans le mode light
+ .light-mode .section {
+  background-color: #fff; // Couleur de fond dans le mode light
+  color: #333; // Couleur de texte dans le mode light
+}
+
+// Style pour chaque section dans le mode dark
+.dark-mode .section {
+  background-color: #333; // Couleur de fond dans le mode dark
+  color: white; // Couleur de texte dans le mode dark
+}
+}
+
+
+// Styles pour le composant YesNoSelector
+.YesNoSelector {
+  margin-bottom: 20px;
+
+  .MuiFormControl-root {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+
+    .MuiFormLabel-root {
+      color: #333;
+    }
+
+    .MuiRadio-root {
+      color: #2196f3; // Couleur du radio button
+    }
+  }
+}
+
+// Styles pour le composant Selector
+.Selector {
+  margin-bottom: 20px;
+
+  .MuiFormControl-root {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+
+    .MuiFormLabel-root {
+      color: #333;
+    }
+
+    .MuiSelect-root {
+      color: #2196f3; // Couleur de la sélection
+    }
+  }
+}
+
+// ... Ajoutez des styles pour les autres composants
